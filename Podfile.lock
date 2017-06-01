@@ -1,0 +1,75 @@
+PODS:
+  - Alamofire (4.4.0)
+  - CarbonKit (2.1.9)
+  - Gaikan (0.9.0):
+    - KVOController (~> 1.x)
+  - Google-Mobile-Ads-SDK (7.20.0)
+  - HexColors (5.0.1)
+  - KVOController (1.2.0)
+  - MagicMapper (1.0.2)
+  - MMTabBarAnimation (0.2.9)
+  - NVActivityIndicatorView (3.6.1)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - PKHUD (4.2.2)
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
+  - RealmSwift (2.7.0):
+    - Realm (= 2.7.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Spring (1.0.3)
+  - XCGLogger (5.0.1):
+    - XCGLogger/Core (= 5.0.1)
+  - XCGLogger/Core (5.0.1):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - CarbonKit
+  - Gaikan
+  - Google-Mobile-Ads-SDK
+  - HexColors
+  - MagicMapper
+  - MMTabBarAnimation
+  - NVActivityIndicatorView
+  - PKHUD (~> 4.0)
+  - RealmSwift
+  - SDWebImage (~> 3.8)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - XCGLogger (~> 5.0.1)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 8201b5c93bd7ebdf4cd18160bcde1e6e88c2be64
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  CarbonKit: af16a9c0d2b6c908a5985fe4633424d38c9bfc0a
+  Gaikan: f1f95e20cd9064714ca3c6c906aea62d23644331
+  Google-Mobile-Ads-SDK: 168312cdc167fa22746d4ea8e839fc4825dd2966
+  HexColors: d642e696de77aa919584012e80bf62a4b099cee1
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
+  MMTabBarAnimation: 1d810a99d32b109afdf77cd0a20a19981c1e8598
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  PKHUD: 9a3599e04d57676ec14746c40e423a52fb6588c0
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
+  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
+
+PODFILE CHECKSUM: 54860be1e281e711f9fda669bdc1be1cef9197f8
+
+COCOAPODS: 1.2.1

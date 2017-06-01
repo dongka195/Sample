@@ -1,14 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +25,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mE-2h-QEj">
+                                <rect key="frame" x="128" y="314.5" width="120" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-bs-dTK" customClass="PushButtonView" customModule="Sample" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="547" width="100" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01h-iV-JbZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="01h-iV-JbZ" firstAttribute="top" secondItem="RHI-bs-dTK" secondAttribute="top" id="13U-yo-PSj"/>
+                                    <constraint firstAttribute="width" constant="100" id="3Pi-Ja-Xwu"/>
+                                    <constraint firstAttribute="trailing" secondItem="01h-iV-JbZ" secondAttribute="trailing" id="Q7l-mW-JRz"/>
+                                    <constraint firstItem="01h-iV-JbZ" firstAttribute="leading" secondItem="RHI-bs-dTK" secondAttribute="leading" id="WOJ-fm-r4t"/>
+                                    <constraint firstAttribute="height" constant="100" id="bd2-2J-mye"/>
+                                    <constraint firstAttribute="bottom" secondItem="01h-iV-JbZ" secondAttribute="bottom" id="tGm-Nh-Vcd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5mE-2h-QEj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aF7-Mg-8u7"/>
+                            <constraint firstItem="5mE-2h-QEj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="agA-Dh-I5d"/>
+                            <constraint firstItem="RHI-bs-dTK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgO-fX-3Dd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RHI-bs-dTK" secondAttribute="bottom" constant="20" id="yXH-ac-dR1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addBtn" destination="01h-iV-JbZ" id="g89-Qe-9wZ"/>
+                        <outlet property="welcome" destination="5mE-2h-QEj" id="i3G-Dr-E5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>
